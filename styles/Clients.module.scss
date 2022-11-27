@@ -1,0 +1,424 @@
+@import '../styles/Variables.scss';
+
+// ------------------CSS------------------
+#clients-page {
+    padding-top: $header-height;
+    min-height: 100vh;
+
+    .client-panel {
+        width: 100%;
+        padding: 30px 7% 60px;
+        box-sizing: border-box;
+
+        h1 {
+            font-size: $page-heading;
+            text-align: center;
+        }
+
+        .client-flex {
+            display: flex;
+            padding: 0 3%;
+            justify-content: space-between;
+            margin: 60px 0;
+            position: relative;
+
+            .client-heads {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+
+                .accordion {
+                    width: 100%;
+                    margin: 25px 0;
+
+                    .accordion-head {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: pointer;
+
+                        .client-head {
+                            cursor: pointer;
+
+                            h2 {
+                                font-size: $font-size-head;
+                                margin: 0;
+                                &:hover {
+                                    color: #d6d6d6;
+                                }
+                            }
+
+                            p {
+                                margin: 10px 0 0;
+                                font-size: $font-size-para;
+                                font-family: $secondary-font;
+                            }
+                        }
+
+                        .accordion-dropdown {
+                            filter: invert(100%) sepia(4%) saturate(152%) hue-rotate(199deg) brightness(112%) contrast(95%);
+                            display: none;
+                            width: 28px;
+                            transition: transform 0.15s ease-out;
+
+                            &[data-show="true"] {
+                                transform: rotate(180deg);
+                                transition: transform 0.3s ease-in;
+                            }
+                        }
+                    }
+
+                    .accordion-menu {
+                        display: none;
+                        max-height: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        visibility: hidden;
+                        transition: all 0.15s ease-out;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        &[data-show="true"] {
+                            padding-top: 35px;
+                            visibility: visible;
+                            transition: all 0.3s ease-in;
+                        }
+
+                        .client-display {
+                            width: 100%;
+                            position: static;
+                        }
+                    }
+                }
+            }
+
+            .client-display {
+                // position: sticky;
+                // bottom: 0;
+                width: 45%;
+                transform: translate(-22%) scale(0.9);
+                align-self: center;
+            }
+        }
+    }
+}
+
+// -----------------Mobile CSS-----------------
+@media only screen and (max-width: 576px) {
+    #clients-page {
+        padding-top: $header-height-mob;
+
+        .client-panel {
+            padding: 7vw $side-padding-mob 12vw;
+
+            h1 {
+                font-size: $page-heading-mob;
+            }
+
+            .client-flex {
+                margin: 10vw 0 0;
+                padding: 0;
+
+                .client-heads {
+                    width: 100%;
+
+                    .accordion {
+                        margin: 6vw 0;
+
+                        .accordion-head {
+                            .accordion-dropdown {
+                                display: block;
+                            }
+
+                            .client-head {
+                                cursor: default;
+
+                                h2 {
+                                    font-size: $font-size-head-mob - 1vw;
+                                    width: 98%;
+                                    line-height: $font-size-head-mob + 0.5vw;
+                                    margin: 0;
+                                }
+
+                                p {
+                                    margin-top: 1.5vw;
+                                    font-size: $font-size-para-mob - 0.8vw;
+                                }
+                            }
+                        }
+
+                        .accordion-menu {
+                            display: flex;
+
+                            &>div {
+                                max-height: 250px;
+                            }
+
+                            &[data-show="true"] {
+                                max-height: 250px;
+                                padding-top: 4vw;
+                            }
+
+                            .client-display {
+                                display: block;
+                                transform: translate(-0.5%, -22%) scale(0.47);
+                            }
+                        }
+                    }
+                }
+
+                .client-display {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// -----------------577 - 768 px-----------------
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    #clients-page {
+        padding-top: $header-height-768;
+
+        .client-panel {
+            padding: 4vw $side-padding-768 8vw;
+
+            h1 {
+                font-size: $page-heading-768;
+            }
+
+            .client-flex {
+                margin: 8vw 0 0;
+                padding: 0;
+
+                .client-heads {
+                    width: 100%;
+
+                    .accordion {
+                        margin: 4.5vw 0;
+
+                        .accordion-head {
+                            .accordion-dropdown {
+                                display: block;
+                            }
+
+                            .client-head {
+                                cursor: default;
+
+                                h2 {
+                                    font-size: $font-size-head-768;
+                                    margin: 0;
+                                }
+
+                                p {
+                                    font-size: $font-size-para-768;
+                                }
+                            }
+                        }
+
+                        .accordion-menu {
+                            display: flex;
+
+                            &>div {
+                                max-height: 350px;
+                            }
+
+                            &[data-show="true"] {
+                                max-height: 350px;
+                                padding-top: 4vw;
+                            }
+
+                            .client-display {
+                                display: block;
+                                transform: translate(-0.5%, -12%) scale(0.7);
+                            }
+                        }
+                    }
+                }
+
+                .client-display {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// -----------------769 - 992 px-----------------
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #clients-page {
+        padding-top: $header-height-992;
+
+        .client-panel {
+            padding: 3vw $side-padding-992 7vw;
+
+            h1 {
+                font-size: $page-heading-992;
+            }
+
+            .client-flex {
+                margin: 5vw 0 0;
+                padding: 0;
+                justify-content: center;
+
+                .client-heads {
+                    width: 95%;
+
+                    .accordion {
+                        margin: 3.5vw 0;
+
+                        .accordion-head {
+                            .accordion-dropdown {
+                                display: block;
+                            }
+
+                            .client-head {
+                                cursor: default;
+
+                                h2 {
+                                    font-size: $font-size-head-992;
+                                    margin: 0;
+                                }
+
+                                p {
+                                    font-size: $font-size-para-992;
+                                }
+                            }
+                        }
+
+                        .accordion-menu {
+                            display: flex;
+
+                            &>div {
+                                max-height: 330px;
+                            }
+
+                            &[data-show="true"] {
+                                max-height: 330px;
+                                padding-top: 2.5vw;
+                            }
+
+                            .client-display {
+                                display: block;
+                                transform: translate(-0.5%, -12%) scale(0.67);
+                            }
+                        }
+                    }
+                }
+
+                .client-display {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// -----------------993 - 1200 px-----------------
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #clients-page {
+        padding-top: $header-height-1200;
+
+        .client-panel {
+            padding: 2vw $side-padding 5vw;
+
+            h1 {
+                font-size: $page-heading-1200;
+            }
+
+            .client-flex {
+                margin: 4vw 0 0;
+                padding: 0;
+                justify-content: center;
+
+                .client-heads {
+                    width: 90%;
+
+                    .accordion {
+                        margin: 3vw 0;
+
+                        .accordion-head {
+                            .accordion-dropdown {
+                                display: block;
+                            }
+
+                            .client-head {
+                                cursor: default;
+
+                                h2 {
+                                    font-size: $font-size-head-1200;
+                                    margin: 0;
+                                }
+
+                                p {
+                                    font-size: $font-size-para-1200;
+                                }
+                            }
+                        }
+
+                        .accordion-menu {
+                            display: flex;
+
+                            &>div {
+                                max-height: 320px;
+                            }
+
+                            &[data-show="true"] {
+                                max-height: 320px;
+                                padding-top: 1.7vw;
+                            }
+
+                            .client-display {
+                                display: block;
+                                transform: translate(-0.5%, -12%) scale(0.65);
+                            }
+                        }
+                    }
+                }
+
+                .client-display {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// -----------------1201 - 1500 px-----------------
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+    #clients-page {
+        .client-panel {
+            h1 {
+                font-size: $page-heading-1500;
+            }
+
+            .client-flex {
+                // padding: 0 1%;
+
+                .client-heads {
+                    .accordion {
+                        .accordion-head {
+                            .client-head {
+                                h2 {
+                                    font-size: $font-size-head-1500;
+                                }
+
+                                p {
+                                    font-size: $font-size-para-1500;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .client-display {
+                    transform: translate(-24%) scale(0.74);
+                }
+            }
+        }
+    }
+}
+
+// -----------------1501 - 1920 px-----------------
+@media only screen and (min-width: 1501px) and (max-width: 1920px) {}

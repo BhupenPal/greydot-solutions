@@ -1,0 +1,100 @@
+@import '../styles/Variables.scss';
+
+// ------------------CSS------------------
+.newsletter {
+    background: $font-color-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 7%;
+
+    h2 {
+        color: $background-color;
+        text-align: center;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    p {
+
+        font-family: $secondary-font;
+        color: $background-color;
+        text-align: center;
+        width: 60%;
+        font-size: $font-size-para;
+        line-height: $font-size-para+10px;
+        margin: 40px 0;
+    }
+}
+
+// -----------------Mobile CSS-----------------
+@media only screen and (max-width: 576px) {
+    .newsletter {
+        padding: 16vw $side-padding-mob;
+
+        h2 {
+            font-size: 8.8vw;
+            line-height: $font-size-head-mob;
+        }
+
+        p {
+            width: 100%;
+            font-size: $font-size-para-mob;
+            line-height: $font-size-para-mob + 1.5vw;
+            margin: 9vw 0;
+        }
+    }
+}
+
+// -----------------577 - 768 px-----------------
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .newsletter {
+        padding: 10vw $side-padding-768;
+
+        h2 {
+            font-size: $font-size-head-768;
+        }
+
+        p {
+            width: 90%;
+            font-size: $font-size-para-768;
+            margin: 5.5vw 0;
+        }
+    }
+}
+
+// -----------------769 - 992 px-----------------
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .newsletter {
+        padding: 7vw $side-padding-992;
+
+        h2 {
+            font-size: $font-size-head-992;
+        }
+
+        p {
+            width: 75%;
+            font-size: $font-size-para-992;
+            line-height: $font-size-para-992 + 0.8vw;
+            margin: 5.5vw 0;
+        }
+    }
+}
+
+// -----------------993 - 1200 px-----------------
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .newsletter {
+        padding: 5.5vw $side-padding;
+
+        h2 {
+            font-size: $font-size-head-1200;
+        }
+
+        p {
+            font-size: $font-size-para-1200;
+            line-height: $font-size-para-1200 + 0.8vw;
+            margin: 3.2vw 0 3.7vw;
+        }
+    }
+}

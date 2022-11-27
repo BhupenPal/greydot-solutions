@@ -1,0 +1,219 @@
+@import '../styles/Variables.scss';
+
+// ------------------CSS------------------
+.services {
+    padding-top: $header-height;
+
+    .services-info {
+        padding: 30px $side-padding 0;
+
+        h1 {
+            font-size: $page-heading;
+            text-align: center;
+        }
+
+        .services-block {
+            margin: 80px 0 120px;
+
+            h2 {
+                font-size: $font-size-head;
+            }
+
+            p {
+                font-family: $secondary-font;
+                font-size: $font-size-para;
+                line-height: $font-size-para + 12px;
+            }
+
+            .block-imgs {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 60px;
+
+                img {
+                    width: 180px;
+                }
+
+                .filter-white {
+                    filter: invert(100%) sepia(4%) saturate(152%) hue-rotate(199deg) brightness(112%) contrast(95%);
+                }
+            }
+        }
+    }
+}
+
+
+// -----------------Mobile CSS-----------------
+@media only screen and (max-width: 576px) {
+    .services {
+        padding-top: $header-height-mob;
+
+        .services-info {
+
+            h1 {
+                font-size: $page-heading-mob;
+            }
+
+            .services-block {
+                margin: 20vw 0;
+
+                h2 {
+                    font-size: $font-size-head-mob;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: $font-size-para-mob;
+                    line-height: $font-size-para-mob + 1.8vw;
+                }
+
+                .block-imgs {
+                    margin-top: 5vw;
+
+                    img {
+                        width: 22vw;
+                        margin: 4vw 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// -----------------577 - 768 px-----------------
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .services {
+        padding-top: $header-height-768;
+
+        .services-info {
+            padding: 30px $side-padding-768 0;
+
+            h1 {
+                font-size: $page-heading-768;
+            }
+
+            .services-block {
+                margin: 14vw 0;
+
+                h2 {
+                    font-size: $font-size-head-768;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: $font-size-para-768;
+                    line-height: $font-size-para-768 + 1.5vw;
+                }
+
+                .block-imgs {
+                    margin-top: 3.5vw;
+
+                    img {
+                        width: 18vw;
+                        margin: 2vw 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// -----------------769 - 992 px-----------------
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .services {
+        padding-top: $header-height-992;
+
+        .services-info {
+            h1 {
+                font-size: $page-heading-992;
+            }
+
+            .services-block {
+                margin: 10vw 0 12vw;
+
+                h2 {
+                    font-size: $font-size-head-992;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: $font-size-para-992;
+                    line-height: $font-size-para-992 + 1.2vw;
+                }
+
+                .block-imgs {
+                    margin-top: 4vw;
+
+                    img {
+                        width: 15.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// -----------------993 - 1200 px-----------------
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .services {
+        padding-top: $header-height-1200;
+
+        .services-info {
+            h1 {
+                font-size: $page-heading-1200;
+            }
+
+            .services-block {
+                margin: 6.6vw 0 9vw;
+
+                h2 {
+                    font-size: $font-size-head-1200;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: $font-size-para-1200;
+                    line-height: $font-size-para-1200 + 1vw;
+                }
+
+                .block-imgs {
+                    margin-top: 4vw;
+
+                    img {
+                        width: 14vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// -----------------1201 - 1500 px-----------------
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+    .services {
+        .services-info {
+            h1 {
+                font-size: $page-heading-1500;
+            }
+
+            .services-block {
+                h2 {
+                    font-size: $font-size-head-1500;
+                }
+
+                p {
+                    font-size: $font-size-para-1500;
+                    line-height: $font-size-para-1500 + 1vw;
+                }
+
+                .block-imgs {
+                    img {
+                        width: 12vw;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@import '../styles/Variables.scss';
+
+.blue-btn {
+    background: #66BFBF;
+    color: $background-color;
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: $font-size-para;
+    padding: 15px 0;
+    transition: all 0.2s ease;
+
+    a,
+    span {
+        padding: 15px;
+    }
+
+    &:hover {
+        background: $background-color;
+        color: #66BFBF;
+    }
+}
+
+#blue-border {
+    a {
+        padding: 14px;
+        border: 1px solid #66BFBF;
+    }
+}
+
+// -----------------Mobile CSS-----------------
+@media only screen and (max-width: 576px) {
+    .blue-btn {
+        font-size: $font-size-para-mob;
+    }
+}
+
+// -----------------577 - 768 px-----------------
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .blue-btn {
+        font-size: $font-size-para-768;
+        padding: 13px 0;
+
+        a,
+        span {
+            padding: 12px;
+        }
+    }
+}
+
+// -----------------769 - 992 px-----------------
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .blue-btn {
+        font-size: $font-size-para-992;
+    }
+}
+
+// -----------------993 - 1200 px-----------------
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .blue-btn {
+        font-size: $font-size-para-1200;
+    }
+}
+
+// -----------------1201 - 1500 px-----------------
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+    .blue-btn {
+        font-size: $font-size-para-1500;
+    }
+}
