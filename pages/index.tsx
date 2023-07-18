@@ -87,92 +87,86 @@ export default function Home() {
         <div className={HomeStyles['client-logo']}>
           <ul>
             <li className={HomeStyles.vertical}>
-              <Link href="https://zariyaaa.com/">
-                <a
-                  href="https://zariyaaa.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="/images/Zariyaaa logo.png"
-                    alt="Zariyaaa Logo"
-                    loading="lazy"
-                  />
-                </a>
+              <Link
+                href="https://zariyaaa.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="disabled-link"
+              >
+                <img
+                  src="/images/Zariyaaa logo.png"
+                  alt="Zariyaaa Logo"
+                  loading="lazy"
+                />
               </Link>
             </li>
             <li>
-              <Link href="https://edudictive.in/">
-                <a
-                  href="https://edudictive.in/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="/images/Edudictive Logo.svg"
-                    alt="Edudictive Logo"
-                    loading="lazy"
-                  />
-                </a>
+              <Link
+                href="https://edudictive.in/"
+                target="_blank"
+                rel="noreferrer"
+                className="disabled-link"
+              >
+                <img
+                  src="/images/Edudictive Logo.svg"
+                  alt="Edudictive Logo"
+                  loading="lazy"
+                />
               </Link>
             </li>
             <li className={HomeStyles.vertical}>
-              <Link href="https://hoohoop.co.nz/">
-                <a
-                  href="https://hoohoop.co.nz/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="/images/hoohoop logo.png"
-                    alt="Hoohoop Logo"
-                    loading="lazy"
-                  />
-                </a>
+              <Link
+                href="https://hoohoop.co.nz/"
+                target="_blank"
+                rel="noreferrer"
+                className="disabled-link"
+              >
+                <img
+                  src="/images/hoohoop logo.png"
+                  alt="Hoohoop Logo"
+                  loading="lazy"
+                />
               </Link>
             </li>
             <li>
-              <Link href="https://www.souvlakiking.nz/">
-                <a
-                  href="https://www.souvlakiking.nz/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="/images/souvlaki king logo.svg"
-                    alt="Souvlaki King Logo"
-                  />
-                </a>
+              <Link
+                href="https://www.souvlakiking.nz/"
+                target="_blank"
+                rel="noreferrer"
+                className="disabled-link"
+              >
+                <img
+                  src="/images/souvlaki king logo.svg"
+                  alt="Souvlaki King Logo"
+                />
               </Link>
             </li>
             <li className={HomeStyles.vertical}>
-              <Link href="https://rubistosdesigns.com/">
-                <a
-                  href="https://rubistosdesigns.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="/images/rubistos-logo.png"
-                    alt="Rubistos Logo"
-                    loading="lazy"
-                  />
-                </a>
+              <Link
+                href="https://rubistosdesigns.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="disabled-link"
+              >
+                <img
+                  src="/images/rubistos-logo.png"
+                  alt="Rubistos Logo"
+                  loading="lazy"
+                />
               </Link>
             </li>
             <li className={HomeStyles.vertical}>
-              <Link href="https://narvadadiagnostics.com/">
-                <a
-                  href="https://narvadadiagnostics.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="/images/narvada centre logo.png"
-                    alt="Narvada Logo"
-                    loading="lazy"
-                  />
-                </a>
+              <Link
+                href="https://narvadadiagnostics.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="disabled-link"
+              >
+                <img
+                  src="/images/narvada centre logo.png"
+                  alt="Narvada Logo"
+                  loading="lazy"
+                />
               </Link>
             </li>
           </ul>

@@ -38,24 +38,20 @@ const Header = () => {
         </div>
         <div className={RunnerStyles['head-logo-mob']}>
           <Link href="/">
-            <a href="/">
-              <img
-                src="/images/grey-logo-mobile.png"
-                alt="GreyDot Solutions Logo"
-                loading="lazy"
-              />
-            </a>
+            <img
+              src="/images/grey-logo-mobile.png"
+              alt="GreyDot Solutions Logo"
+              loading="lazy"
+            />
           </Link>
         </div>
         <div className={RunnerStyles['head-logo']}>
           <Link href="/">
-            <a href="/">
-              <img
-                src="/images/grey-logo2.png"
-                alt="GreyDot Solutions Logo"
-                loading="lazy"
-              />
-            </a>
+            <img
+              src="/images/grey-logo2.png"
+              alt="GreyDot Solutions Logo"
+              loading="lazy"
+            />
           </Link>
         </div>
         <nav className={RunnerStyles['head-nav']}>
